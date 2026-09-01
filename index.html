@@ -1,0 +1,395 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>PZDREAM - Tienda</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ===== CSS EXTERNO ===== -->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- ===== BOOTSTRAP ===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- ===== FONT AWESOME ===== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-large">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <i class="fas fa-store me-2"></i>PZDREAM
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">
+                  <i class="fas fa-home me-1"></i>Inicio
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-box me-1"></i>Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-desktop me-2"></i>Computadores
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-laptop me-2"></i>Notebooks
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-hdd me-2"></i>Discos duros
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-microchip me-2"></i>Tarjetas de video
+                    </a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-tag me-2"></i>Ver todos
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-question-circle me-1"></i>Centro de ayuda
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-info-circle me-1"></i>Nosotros
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <i class="fas fa-envelope me-1"></i>Contacto
+                </a>
+              </li>
+            </ul>
+
+            <!-- Iconos de carrito y usuario (derecha) -->
+            <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+              <!-- Carrito -->
+              <li class="nav-item">
+                <a class="nav-link nav-icon-link" href="#" title="Carrito">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="cart-badge">0</span>
+                  <span class="icon-label d-none d-lg-inline">Carrito</span>
+                </a>
+              </li>
+
+              <!-- Separador -->
+              <li class="nav-divider d-none d-lg-block"></li>
+
+              <!-- Usuario / Cuenta -->
+              <li class="nav-item dropdown user-dropdown">
+                <a
+                  class="nav-link nav-icon-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  title="Mi cuenta"
+                >
+                  <i class="fas fa-user-circle"></i>
+                  <span class="icon-label d-none d-lg-inline">Usuario</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-user"></i> Mi Perfil
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-shopping-bag"></i> Mis Pedidos
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-heart"></i> Lista de Deseos
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      <i class="fas fa-cog"></i> Configuración
+                    </a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item text-danger" href="#">
+                      <i class="fas fa-sign-out-alt"></i> Cerrar Sesión
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contenido principal (se expande para ocupar toda la pantalla) -->
+    <main class="main-content container mt-4">
+      <!-- Mensaje de bienvenida -->
+      <div class="alert alert-info">
+        <i class="fas fa-info-circle me-2"></i>
+        Bienvenido a PZDREAM - Tu tienda de tecnología
+      </div>
+
+      <!-- ===== CARRUSEL CON ONDA DE FONDO ===== -->
+      <div class="carousel-wrapper">
+        <!-- Onda decorativa (líneas) -->
+        <div class="wave-background">
+          <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+            <path
+              d="M0,40 C150,0 300,80 450,40 C600,0 750,80 900,40 C1050,0 1200,80 1200,40 L1200,80 L0,80 Z"
+              fill="none"
+              stroke="#007bff"
+              stroke-width="3"
+              opacity="0.6"
+            />
+            <path
+              d="M0,50 C200,10 400,90 600,50 C800,10 1000,90 1200,50"
+              fill="none"
+              stroke="#0056b3"
+              stroke-width="2"
+              opacity="0.4"
+            />
+            <path
+              d="M0,60 C250,20 500,100 750,60 C1000,20 1200,100 1200,60"
+              fill="none"
+              stroke="#00aaff"
+              stroke-width="1.5"
+              opacity="0.3"
+            />
+          </svg>
+        </div>
+
+        <!-- ===== CARRUSEL CON IMÁGENES ===== -->
+        <div class="carousel-container">
+          <div
+            id="carouselExampleAutoplaying"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://static.gigabyte.com/StaticFile/Image/Global/ef621c152399f9fa78fa110cec3abc29/PromotionBanner/533"
+                  class="d-block w-100"
+                  alt="Ofertas en computadores"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://static.pcfactory.cl/imagenes/56433-notebook-gamer-rog-zephyrus-duo-01.webp"
+                  class="d-block w-100"
+                  alt="Notebooks destacados"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://www.winpy.cl/files/ow39550_kingston_nv3_garantia_5_a%C3%A3%C2%B1os.jpg"
+                  class="d-block w-100"
+                  alt="Accesorios tecnológicos"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Fin del carousel-wrapper -->
+
+      <!-- ===== SECCIÓN DE BÚSQUEDA ===== -->
+      <div class="search-section">
+        <div class="input-group">
+          <input
+            type="search"
+            class="form-control"
+            placeholder="Buscar productos, marcas o categorías..."
+            aria-label="Buscar productos"
+          />
+          <button class="btn btn-search" type="button">
+            <i class="fas fa-search"></i>
+            <span>Buscar</span>
+          </button>
+        </div>
+
+        <div class="quick-categories">
+          <span class="text-muted me-2">Búsquedas rápidas:</span>
+          <button class="category-btn">
+            <i class="fas fa-laptop"></i> Notebooks
+          </button>
+          <button class="category-btn">
+            <i class="fas fa-desktop"></i> PC Gaming
+          </button>
+          <button class="category-btn"><i class="fas fa-hdd"></i> SSD</button>
+          <button class="category-btn">
+            <i class="fas fa-microchip"></i> Procesadores
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <!-- Columna 1: Información de la tienda -->
+          <div class="col-md-4 mb-3">
+            <h5 class="footer-title">
+              <i class="fas fa-store me-2"></i>PZDREAM
+            </h5>
+            <p class="footer-text">
+              Tu tienda de tecnología favorita. Encuentra los mejores productos
+              al mejor precio.
+            </p>
+            <div class="social-icons">
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+
+          <!-- Columna 2: Enlaces rápidos -->
+          <div class="col-md-2 mb-3">
+            <h6 class="footer-title">Enlaces</h6>
+            <ul class="footer-links">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Productos</a></li>
+              <li><a href="#">Ofertas</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Categorías -->
+          <div class="col-md-2 mb-3">
+            <h6 class="footer-title">Categorías</h6>
+            <ul class="footer-links">
+              <li><a href="#">Computadores</a></li>
+              <li><a href="#">Notebooks</a></li>
+              <li><a href="#">Discos duros</a></li>
+              <li><a href="#">Tarjetas de video</a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 4: Contacto -->
+          <div class="col-md-4 mb-3">
+            <h6 class="footer-title">Contacto</h6>
+            <ul class="footer-links">
+              <li>
+                <i class="fas fa-map-marker-alt me-2"></i>
+                Santiago, Chile
+              </li>
+              <li>
+                <i class="fas fa-phone me-2"></i>
+                +56 9 1234 5678
+              </li>
+              <li>
+                <i class="fas fa-envelope me-2"></i>
+                contacto@pzdream.cl
+              </li>
+              <li>
+                <i class="fas fa-clock me-2"></i>
+                Lun-Vie: 9:00 - 18:00
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Línea divisoria y derechos reservados -->
+        <div class="footer-bottom">
+          <div class="row">
+            <div class="col text-center">
+              <p class="mb-0">
+                &copy; 2026 <strong>PZDREAM</strong> - Todos los derechos
+                reservados.
+                <br class="d-sm-none" />
+                <span class="text-muted"
+                  >Hecho con <i class="fas fa-heart text-danger"></i> para los
+                  amantes de la tecnología</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script/script.js" async defer></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,355 @@
+/* ===== ESTILOS GENERALES DE LA NAVBAR ===== */
+.navbar-large {
+  padding: 1.2rem 1.5rem;
+}
+
+.navbar-large .navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.navbar-large .nav-link {
+  font-size: 1.15rem;
+  padding: 0.8rem 1.2rem;
+}
+
+/* ===== ICONOS DE CARRITO Y USUARIO ===== */
+.nav-icon-link {
+  font-size: 1.4rem;
+  padding: 0.5rem 0.8rem !important;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.nav-icon-link i {
+  font-size: 1.5rem;
+}
+
+.nav-icon-link .icon-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ===== BADGE DEL CARRITO ===== */
+.cart-badge {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  background-color: #dc3545;
+  color: white;
+  border-radius: 50%;
+  padding: 0.15rem 0.45rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  min-width: 18px;
+  text-align: center;
+  transform: translate(25%, -25%);
+  border: 2px solid white;
+}
+
+/* ===== SEPARADOR VERTICAL ===== */
+.nav-divider {
+  width: 1px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.15);
+  margin: 0 0.5rem;
+  align-self: center;
+}
+
+/* ===== DROPDOWN ===== */
+.navbar-large .dropdown-menu {
+  font-size: 1.05rem;
+}
+
+.user-dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+.user-dropdown .dropdown-menu {
+  min-width: 200px;
+  padding: 0.5rem 0;
+}
+
+.user-dropdown .dropdown-item i {
+  width: 20px;
+  margin-right: 10px;
+  color: #6c757d;
+}
+
+/* ===== RESPONSIVE (MÓVIL) ===== */
+@media (max-width: 992px) {
+  .navbar-large .navbar-nav .nav-link {
+    padding: 0.6rem 0;
+  }
+
+  .nav-icon-link {
+    padding: 0.6rem 0 !important;
+    justify-content: flex-start;
+  }
+
+  .nav-divider {
+    display: none;
+  }
+
+  .cart-badge {
+    position: static;
+    transform: none;
+    margin-left: 5px;
+    border: none;
+  }
+
+  .navbar-large .navbar-nav {
+    gap: 0.3rem;
+  }
+}
+
+/* ===== CARRUSEL ===== */
+.carousel-container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.carousel-item img {
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    height: 200px;
+  }
+}
+
+/* ===== SECCIÓN DE BÚSQUEDA ===== */
+.search-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.search-section .input-group {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-section .form-control {
+  height: 50px;
+  font-size: 1.1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 25px 0 0 25px;
+  border: 2px solid #dee2e6;
+  transition: all 0.3s ease;
+}
+
+.search-section .form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.search-section .btn-search {
+  height: 50px;
+  padding: 0.5rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 0 25px 25px 0;
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.search-section .btn-search:hover {
+  background: linear-gradient(135deg, #0056b3, #003d80);
+  transform: scale(1.02);
+}
+
+.search-section .btn-search i {
+  margin-right: 8px;
+}
+
+/* ===== CATEGORÍAS RÁPIDAS ===== */
+.quick-categories {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.quick-categories .category-btn {
+  margin: 0.3rem 0.5rem;
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
+  background-color: #e9ecef;
+  border: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.quick-categories .category-btn:hover {
+  background-color: #007bff;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.quick-categories .category-btn i {
+  margin-right: 5px;
+}
+
+@media (max-width: 576px) {
+  .search-section .btn-search {
+    padding: 0.5rem 1rem;
+  }
+  .search-section .btn-search span {
+    display: none;
+  }
+  .search-section .btn-search i {
+    margin-right: 0;
+  }
+}
+
+/* ======================================== */
+/* ===== FOOTER ===== */
+/* ======================================== */
+.footer {
+  background-color: #2d3436;
+  color: #dfe6e9;
+  padding: 3rem 0 1.5rem 0;
+  margin-top: 2rem;
+}
+
+.footer-title {
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  font-size: 1.1rem;
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #b2bec3;
+}
+
+/* ===== REDES SOCIALES ===== */
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-link {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #dfe6e9;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+  margin-right: 8px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.social-link:hover {
+  background-color: #007bff;
+  color: white;
+  transform: translateY(-3px);
+  text-decoration: none;
+}
+
+/* ===== ENLACES DEL FOOTER ===== */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.6rem;
+}
+
+.footer-links a {
+  color: #b2bec3;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: #007bff;
+  padding-left: 5px;
+}
+
+.footer-links li i {
+  color: #007bff;
+  width: 20px;
+}
+
+/* ===== PARTE INFERIOR DEL FOOTER ===== */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 0.9rem;
+  color: #b2bec3;
+}
+
+/* ===== RESPONSIVE FOOTER ===== */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0 1rem 0;
+  }
+  
+  .footer-title {
+    margin-top: 1rem;
+  }
+}
+
+/* ======================================== */
+/* ===== ONDA DE LÍNEAS DETRÁS DEL CARRUSEL ===== */
+/* ======================================== */
+
+.carousel-wrapper {
+  position: relative;
+  background-color: #e3f2fd; /* Fondo celeste suave para el carrusel */
+  border-radius: 12px;
+  padding: 1rem 1rem 2rem 1rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.wave-background {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* Altura de las líneas de onda */
+  z-index: 0;
+  pointer-events: none; /* No interfiere con el carrusel */
+}
+
+.wave-background svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-container {
+  position: relative;
+  z-index: 1; /* Carrusel por encima de la onda */
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+  .wave-background {
+    height: 50px;
+  }
+  .carousel-wrapper {
+    padding-bottom: 1.5rem;
+  }
+}
