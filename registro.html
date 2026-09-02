@@ -1,0 +1,292 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Registro - PZDREAM</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="css/registro.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-large">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <i class="fas fa-store me-2"></i>PZDREAM
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  <i class="fas fa-home me-1"></i>Inicio
+                </a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-box me-1"></i>Productos
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-desktop me-2"></i>Computadores</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-laptop me-2"></i>Notebooks</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-hdd me-2"></i>Discos duros</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-microchip me-2"></i>Tarjetas de video</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-tag me-2"></i>Ver todos</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fas fa-question-circle me-1"></i>Centro de ayuda</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fas fa-info-circle me-1"></i>Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"
+                  ><i class="fas fa-envelope me-1"></i>Contacto</a
+                >
+              </li>
+            </ul>
+
+            <ul class="navbar-nav mb-2 mb-lg-0 align-items-lg-center">
+              <li class="nav-item">
+                <a class="nav-link nav-icon-link" href="#" title="Carrito">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="cart-badge">0</span>
+                  <span class="icon-label d-none d-lg-inline">Carrito</span>
+                </a>
+              </li>
+              <li class="nav-divider d-none d-lg-block"></li>
+              <li class="nav-item dropdown user-dropdown">
+                <a
+                  class="nav-link nav-icon-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  title="Mi cuenta"
+                >
+                  <i class="fas fa-user-circle"></i>
+                  <span class="icon-label d-none d-lg-inline">Usuario</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-user"></i> Mi Perfil</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-shopping-bag"></i> Mis Pedidos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-heart"></i> Lista de Deseos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      ><i class="fas fa-cog"></i> Configuración</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item text-danger" href="#"
+                      ><i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-md-8 col-sm-10">
+            <div class="register-card">
+              <h2 class="text-center mb-4">
+                <i class="fas fa-user-plus text-primary me-2"></i>Crear Cuenta
+              </h2>
+              <p class="text-muted text-center mb-4">
+                Completa tus datos para registrarte en PZDREAM
+              </p>
+
+              <form>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nombre"
+                      placeholder="Ingresa tu nombre"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="apellido"
+                      placeholder="Ingresa tu apellido"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="direccion" class="form-label">Dirección</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="direccion"
+                    placeholder="Calle, número, comuna"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="telefono" class="form-label">Teléfono</label>
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="telefono"
+                    placeholder="+56 9 1234 5678"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="ejemplo@correo.cl"
+                    required
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="password" class="form-label">Contraseña</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Mínimo 8 caracteres"
+                    required
+                  />
+                  <div class="form-text">
+                    La contraseña debe tener al menos 8 caracteres.
+                  </div>
+                </div>
+
+                <div class="mb-4">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="terminos"
+                      required
+                    />
+                    <label class="form-check-label" for="terminos">
+                      Acepto los
+                      <a href="#" class="text-primary"
+                        >términos y condiciones</a
+                      >
+                    </label>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-register w-100">
+                  <i class="fas fa-user-check me-2"></i>Registrarse
+                </button>
+              </form>
+
+              <div class="login-link text-center mt-4">
+                <p class="mb-0">
+                  ¿Ya tienes cuenta?
+                  <a href="#" class="text-primary fw-semibold"
+                    >Inicia sesión aquí</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
