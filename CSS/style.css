@@ -605,3 +605,91 @@ footer {
     font-size: 1.6rem;
   }
 }
+/* ===== ESTILOS PARA PÁGINA DE DETALLE DE PRODUCTO ===== */
+/* Contenedor de imagen  */
+.product-image-container {
+  position: relative;
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image-container img {
+  max-height: 500px;
+  width: 100%;
+  object-fit: contain;
+}
+
+/*  Badge de oferta (detalle) */
+.badge-oferta-detalle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #dc3545;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.4);
+  z-index: 2;
+}
+
+/*Precios  */
+.price-detalle {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #007bff;
+}
+
+.old-price-detalle {
+  font-size: 1.3rem;
+  color: #b2bec3;
+  text-decoration: line-through;
+  margin-right: 1rem;
+}
+
+/* Lista de especificaciones  */
+.product-specs-list .list-group-item {
+  background: transparent;
+  border-color: #e9ecef;
+  padding: 0.75rem 0;
+}
+
+.product-specs-list .list-group-item:first-child {
+  border-top: none;
+}
+
+/*Ajustes responsivos*/
+@media (max-width: 768px) {
+  .price-detalle {
+    font-size: 1.8rem;
+  }
+  .badge-oferta-detalle {
+    font-size: 0.9rem;
+    padding: 0.3rem 0.8rem;
+    top: 12px;
+    right: 12px;
+  }
+  .product-image-container {
+    min-height: 200px;
+    padding: 0.5rem;
+  }
+  .product-image-container img {
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .price-detalle {
+    font-size: 1.5rem;
+  }
+  .old-price-detalle {
+    font-size: 1rem;
+  }
+}
