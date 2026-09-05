@@ -1,69 +1,110 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto | PZDREAM</title>
-    <link rel="stylesheet" href="CSS/guia.css">
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/guia.css" />
+  </head>
+  <body>
     <div class="layout-container">
-        <main class="carta">
-            <header class="brand">
-                <h1>PZDREAM</h1>
-                <p>Contacto y Servicio Tecnico</p>
-            </header>
-            <section class="info-group">
-                <h2 class="section-title">Canales directos</h2>
-                <a href="mailto:contacto@pzdream.cl" class="info-item">✉️ contacto@pzdream.cl</a>
-                <a href="tel:+56912345678" class="info-item">📞 +56 9 1234 5678</a>
-            </section>
-            <section class="info-group">
-                <h2 class="section-title">Redes Sociales</h2>
-                <div class="social-links">
-                    <a href="https://instagram.com" target="_blank" rel="noopener" class="social-btn">Instagram</a>
-                    <a href="https://facebook.com" target="_blank" rel="noopener" class="social-btn">Facebook</a>
-                    <a href="https://x.com" target="_blank" rel="noopener" class="social-btn">X / Twitter</a>
-                    <a href="https://Discord.com" target="_blank" rel="noopener" class="social-btn">Discord</a>
-                </div>
-            </section>
-        </main>
-
-        <section class="card community-section">
-            <header class="card-header">
-                <h2>Guía y Recomendaciones</h2>
-                <p>Publica tus dudas</p>
-            </header>
-
-            <form class="post-form" action="#" method="post">
-                <select required class="input-field">
-                    <option value="" disabled selected>Tipo de publicacion</option>
-                    <option value="duda">Tengo una duda técnica</option>
-                    <option value="recomendacion">Busco recomendacion de componentes</option>
-                </select>
-
-                <input type="text" placeholder="Titulo corto (ej. ¿Que fuente recomiendan para una RTX 4080?)" required class="input-field">
-                <textarea placeholder="Describe tus dudas" rows="3" required class="input-field"></textarea>
-                <button type="submit" class="submit-btn">Publicar</button>
-            </form>
-
-            <div class="posts-feed">
-                <h3 class="feed-title">Consultas recientes</h3>
-
-                <article class="post-item">
-                    <div class="post-badge badge-duda">Duda</div>
-                    <h4>Compatibilidad de RAM con Ryzen 7000</h4>
-                    <p>¿Es preferible ir por 6000MHz CL30 o la diferencia frente a CL36 es mínima en juegos?</p>
-                </article>
-
-                <article class="post-item">
-                    <div class="post-badge badge-duda">Recomendacion</div>
-                    <h4>Build para edicion de video por $800.000 CLP</h4>
-                    <p>Busco armar un PC optimizado para Premiere</p>
-                </article>
-            </div>
+      <main class="carta">
+        <header class="brand">
+          <h1>PZDREAM</h1>
+          <p>Contacto y Servicio Tecnico</p>
+        </header>
+        <section class="info-group">
+          <h2 class="section-title">Canales directos</h2>
+          <a href="mailto:contacto@pzdream.cl" class="info-item"
+            >✉️ contacto@pzdream.cl</a
+          >
+          <a href="tel:+56912345678" class="info-item">📞 +56 9 1234 5678</a>
         </section>
+        <section class="info-group">
+          <h2 class="section-title">Redes Sociales</h2>
+          <div class="social-links">
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener"
+              class="social-btn"
+              >Instagram</a
+            >
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener"
+              class="social-btn"
+              >Facebook</a
+            >
+            <a
+              href="https://x.com"
+              target="_blank"
+              rel="noopener"
+              class="social-btn"
+              >X / Twitter</a
+            >
+            <a
+              href="https://Discord.com"
+              target="_blank"
+              rel="noopener"
+              class="social-btn"
+              >Discord</a
+            >
+          </div>
+        </section>
+      </main>
+
+      <section class="card community-section">
+        <header class="card-header">
+          <h2>Guía y Recomendaciones</h2>
+          <p>Publica tus dudas</p>
+        </header>
+
+        <form class="post-form" action="#" method="post">
+          <select required class="input-field">
+            <option value="" disabled selected>Tipo de publicacion</option>
+            <option value="duda">Tengo una duda técnica</option>
+            <option value="recomendacion">
+              Busco recomendacion de componentes
+            </option>
+          </select>
+
+          <input
+            type="text"
+            placeholder="Titulo corto (ej. ¿Que fuente recomiendan para una RTX 4080?)"
+            required
+            class="input-field"
+          />
+          <textarea
+            placeholder="Describe tus dudas"
+            rows="3"
+            required
+            class="input-field"
+          ></textarea>
+          <button type="submit" class="submit-btn">Publicar</button>
+        </form>
+
+        <div class="posts-feed">
+          <h3 class="feed-title">Consultas recientes</h3>
+
+          <article class="post-item">
+            <div class="post-badge badge-duda">Duda</div>
+            <h4>Compatibilidad de RAM con Ryzen 7000</h4>
+            <p>
+              ¿Es preferible ir por 6000MHz CL30 o la diferencia frente a CL36
+              es mínima en juegos?
+            </p>
+          </article>
+
+          <article class="post-item">
+            <div class="post-badge badge-duda">Recomendacion</div>
+            <h4>Build para edicion de video por $800.000 CLP</h4>
+            <p>Busco armar un PC optimizado para Premiere</p>
+          </article>
+        </div>
+      </section>
     </div>
     <script src="script/post.js"></script>
-</body>
+  </body>
 </html>

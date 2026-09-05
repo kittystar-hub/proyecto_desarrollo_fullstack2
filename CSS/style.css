@@ -21,11 +21,14 @@ footer {
 
 .navbar-large {
   padding: 1.2rem 1.5rem;
+  color: rgb(11, 63, 117);
 }
 
 .navbar-large .navbar-brand {
   font-size: 1.8rem;
   font-weight: 600;
+  color: rgb(16, 72, 136);
+
 }
 
 .navbar-large .nav-link {
@@ -91,7 +94,7 @@ footer {
 .user-dropdown .dropdown-item i {
   width: 20px;
   margin-right: 10px;
-  color: #6c757d;
+  color: #0d6dc1;
 }
 
 @media (max-width: 992px) {
@@ -126,8 +129,9 @@ footer {
 }
 
 .carousel-item img {
-  height: 400px;
-  object-fit: cover;
+  height: 450px;
+  width: 500px;
+  object-fit: fill;
   border-radius: 8px;
 }
 
@@ -142,7 +146,7 @@ footer {
   padding: 1.5rem;
   background-color: #f8f9fa;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(32, 124, 216, 0.1);
 }
 
 .search-section .input-group {
