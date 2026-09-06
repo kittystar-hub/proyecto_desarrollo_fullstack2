@@ -50,10 +50,64 @@
                   <i class="fas fa-home me-1"></i>Inicio
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="catalogo.html">
-                  <i class="fas fa-th-large me-1"></i>Catálogo
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fas fa-box me-1"></i>Productos
                 </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="catalogo.html?categoria=computador"
+                    >
+                      <i class="fas fa-desktop me-2"></i>Computadores
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="catalogo.html?categoria=notebook"
+                    >
+                      <i class="fas fa-laptop me-2"></i>Notebooks
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="catalogo.html?categoria=disco-duro"
+                    >
+                      <i class="fas fa-hdd me-2"></i>Discos duros
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="catalogo.html?categoria=tarjeta-grafica"
+                    >
+                      <i class="fas fa-microchip me-2"></i>Tarjetas de video
+                    </a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="catalogo.html">
+                      <i class="fas fa-tag me-2"></i>Ver todos
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-danger fw-bold"
+                      href="ofertas.html"
+                    >
+                      <i class="fas fa-tags me-2"></i>Ofertas
+                    </a>
+                  </li>
+                </ul>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
@@ -179,18 +233,28 @@
             <h6 class="footer-title">Enlaces</h6>
             <ul class="footer-links">
               <li><a href="index.html">Inicio</a></li>
-              <li><a href="catalogo.html">Catálogo</a></li>
-              <li><a href="nosotros.html">Nosotros</a></li>
-              <li><a href="#">Contacto</a></li>
+              <li><a href="catalogo.html">Productos</a></li>
+              <li><a href="ofertas.html">Ofertas</a></li>
+              <li><a href="contacto.html">Contacto</a></li>
             </ul>
           </div>
           <div class="col-md-2 mb-3">
             <h6 class="footer-title">Categorías</h6>
             <ul class="footer-links">
-              <li><a href="#">Computadores</a></li>
-              <li><a href="#">Notebooks</a></li>
-              <li><a href="#">Discos duros</a></li>
-              <li><a href="#">Tarjetas de video</a></li>
+              <li>
+                <a href="catalogo.html?categoria=computador">Computadores</a>
+              </li>
+              <li>
+                <a href="catalogo.html?categoria=disco-duro">Notebooks</a>
+              </li>
+              <li>
+                <a href="catalogo.html?categoria=disco-duro">Discos duros</a>
+              </li>
+              <li>
+                <a href="catalogo.html?categoria=tarjeta-grafica"
+                  >Tarjetas de video</a
+                >
+              </li>
             </ul>
           </div>
           <div class="col-md-4 mb-3">
