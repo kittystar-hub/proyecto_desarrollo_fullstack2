@@ -110,11 +110,6 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="fas fa-question-circle me-1"></i>Centro de ayuda
-                </a>
-              </li>
-              <li class="nav-item">
                 <a
                   class="nav-link active"
                   aria-current="page"
@@ -129,13 +124,32 @@
                 </a>
               </li>
             </ul>
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="login.html">
-                  <i class="fas fa-sign-in-alt me-1"></i>Iniciar sesión
+            <li class="nav-divider d-none d-lg-block"></li>
+            <li class="nav-item dropdown user-dropdown">
+              <div id="userMenuGuest" class="user-menu-version">
+                <a
+                  class="nav-link nav-icon-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  <i class="fas fa-user-circle"></i>
+                  <span class="icon-label d-none d-lg-inline">Cuenta</span>
                 </a>
-              </li>
-            </ul>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="login.html"
+                      ><i class="fas fa-sign-in-alt"></i> Iniciar sesión</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="registro.html"
+                      ><i class="fas fa-user-plus"></i> Registrarse</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
           </div>
         </div>
       </nav>
