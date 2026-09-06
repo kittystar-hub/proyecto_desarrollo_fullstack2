@@ -13,7 +13,7 @@ Plataforma web de comercio electrónico para la venta de productos tecnológicos
 - **Panel de administración** para gestionar productos (CRUD).
 - **Sección de contacto** con formulario de consultas y publicaciones comunitarias.
 
-## 🚀 Tecnologías Utilizadas
+##  Tecnologías Utilizadas
 
 | Tecnología | Propósito |
 |------------|-----------|
