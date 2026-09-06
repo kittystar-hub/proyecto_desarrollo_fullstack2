@@ -1,0 +1,199 @@
+:root {
+  --bg-color: #0f172a;
+  --card-bg: #1e293b;
+  --accent-color: #38bdf8;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --border-color: #334155;
+  --input-bg: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px 16px;
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 960px;
+}
+
+/* En pantallas de escritorio, coloca la tarjeta de contacto y la guía en dos columnas */
+@media (min-width: 768px) {
+  .layout-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 28px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-color);
+}
+
+.brand h1 {
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+.brand p, .card-header p {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+  margin-top: 4px;
+}
+
+.section-title {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 6px;
+}
+
+.info-group {
+  margin-top: 20px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  color: var(--text-main);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a.info-item:hover {
+  color: var(--accent-color);
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.social-btn {
+  flex: 1 1 calc(50% - 5px);
+  text-align: center;
+  padding: 10px;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+}
+
+.social-btn:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+/* Estilos de la Guía */
+.community-section {
+  flex: 1.5;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.input-field {
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: var(--accent-color);
+}
+
+.submit-btn {
+  background-color: var(--accent-color);
+  color: #0f172a;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.submit-btn:hover {
+  opacity: 0.9;
+}
+
+.feed-title {
+  font-size: 1rem;
+  margin-bottom: 12px;
+  color: var(--text-main);
+}
+
+.post-item {
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+}
+
+.post-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.badge-duda {
+  background-color: #38bdf822;
+  color: var(--accent-color);
+}
+
+.badge-recom {
+  background-color: #4ade8022;
+  color: #4ade80;
+}
+
+.post-item h4 {
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.post-item p {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
